@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "evosax-playground"
+version = "0.1.0"
+description = "This package is for trying out the evosax library."
+authors = ["Takanori Hashimoto"]
+license = "BSD-3-Clause"
+readme = "README.md"
+packages = [{include = "evosax_playground"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jaxlib = {version = "^0.3.22+cuda11.cudnn82", source = "jax"}
+jupyterlab = "^3.5.0"
+evosax = "^0.0.9"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.17.0"
+jax = {extras = ["cuda"], version = "^0.3.13"}
+
+
+[[tool.poetry.source]]
+name = "jax"
+url = "https://storage.googleapis.com/jax-releases/jax_cuda_releases.html"
+default = false
+secondary = false
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
