@@ -17,6 +17,8 @@ gymnax = "^0.0.5"
 seaborn = "^0.12.1"
 ml-collections = "^0.1.1"
 pandas = "^1.5.1"
+wandb = "^0.13.4"
+envpool = "^0.6.6"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.17.0"
