@@ -12,6 +12,11 @@ python = "^3.9"
 jaxlib = {version = "^0.3.22+cuda11.cudnn82", source = "jax"}
 jupyterlab = "^3.5.0"
 evosax = "^0.0.9"
+brax = "^0.0.15"
+gymnax = "^0.0.5"
+seaborn = "^0.12.1"
+ml-collections = "^0.1.1"
+pandas = "^1.5.1"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.17.0"
